@@ -15,3 +15,8 @@ function getInnerTextById(id){
     return innerNumber;
     
 }
+
+function showSectionById(id){
+    
+}
+
