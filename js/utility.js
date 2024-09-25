@@ -29,6 +29,7 @@ document.getElementById('donate-submit')
         document.getElementById('received-fund-one').innerText = donateAddMonyOne;
 
         document.getElementById('available-balance').innerText = newBalance;
+        document.getElementById('available-balance-two').innerText = newBalance;
 
         // Transection History strat
             const headingNoakhali = document.getElementById('donate-noakhali').innerText;

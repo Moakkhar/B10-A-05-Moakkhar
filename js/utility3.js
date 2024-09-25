@@ -29,6 +29,7 @@ document.getElementById('donate-submit-three')
         document.getElementById('received-fund-three').innerText = donateAddMonyThree;
 
         document.getElementById('available-balance').innerText = newBalance;
+        document.getElementById('available-balance-two').innerText = newBalance;
 
         // Transection History strat
             const headingQuotaProtest = document.getElementById('donate-quota-protest').innerText;
