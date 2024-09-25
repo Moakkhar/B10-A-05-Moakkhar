@@ -41,15 +41,26 @@ document.getElementById('donate-submit-two')
          const now = new Date();
          const formattedDate = now.toISOString().slice(0, 10); // YYYY-MM-DD
          const formattedTime = now.toTimeString().slice(0, 8); // HH:MM:SS
+
+        const div = document.createElement('div');
+        div.classList.add('border-2')
+        div.classList.add('rounded-3xl')
+        div.innerHTML = `
+        
+            <h2 class="text-xl font-bold p-2">Donated: ${donateMony} Tk. ${headingFeni} and New Balance: ${newBalance}</h2>
+            <p class= "text-center pb-2">Date: ${formattedDate} | Time: ${formattedTime}</p>
+        `;
+
+        document.getElementById('donate-history-container').appendChild(div);
          
          // Create a new transaction record
-         const transactionRecord = `Donated: ${donateMony} Tk. ${headingFeni} and New Balance: ${newBalance} | Date: ${formattedDate} | Time: ${formattedTime}`;
+        //  const transactionRecord = `Donated: ${donateMony} Tk. ${headingFeni} and New Balance: ${newBalance} | Date: ${formattedDate} | Time: ${formattedTime}`;
  
          // Append transaction to history
-         const transactionHistoryList = document.getElementById('donate-history-container');
-         const newTransactionItem = document.createElement('p');
-         newTransactionItem.textContent = transactionRecord;
-         transactionHistoryList.appendChild(newTransactionItem);
+        //  const transactionHistoryList = document.getElementById('donate-history-container');
+        //  const newTransactionItem = document.createElement('p');
+        //  newTransactionItem.textContent = transactionRecord;
+        //  transactionHistoryList.appendChild(newTransactionItem);
 
     
         // Transection History end
