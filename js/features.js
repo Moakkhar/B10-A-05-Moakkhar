@@ -14,7 +14,12 @@ document.getElementById('show-history-btn').addEventListener('click', function (
 
 document.getElementById('blog-btn').addEventListener('click', function(){
 
-    window.location.href = '/blog.html'
+    showDomSectionById('faq-section')
+})
+
+document.getElementById('home-btn').addEventListener('click', function(){
+
+    showDomSectionById('main-section')
 })
 
 

@@ -24,7 +24,10 @@ function showSectionById(id){
     document.getElementById(id).classList.remove('hidden')
 }
 
-document.getElementById('home-btn').addEventListener('click', function(){
+function showDomSectionById(id){
+    document.getElementById('main-section').classList.add('hidden')
+    document.getElementById('faq-section').classList.add('hidden')
 
-    window.location.href = '/home.html'
-})
+    document.getElementById(id).classList.remove('hidden')
+    
+}
